@@ -7,6 +7,7 @@
 
 
 #include <iostream>
+#include <iomanip>
 #include <stdio.h>
 #include <list>
 
@@ -96,6 +97,7 @@ int main(){
         MergeSort(notasCandidato, 0, nConcorrentes-1);
 
         // Resposta
+        cout << fixed << setprecision(2);
         cout << notasCandidato[nProximaFase - 1] << endl;
     }
 
